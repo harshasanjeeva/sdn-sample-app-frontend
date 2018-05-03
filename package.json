@@ -1,0 +1,27 @@
+{
+  "name": "alocapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-plugin-emotion": "^9.1.2",
+    "bootstrap": "^4.1.1",
+    "emotion": "^9.1.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-emotion": "^9.1.2",
+    "react-foursquare": "^1.0.3",
+    "react-scripts": "1.1.4",
+    "react-spinkit": "^3.0.0",
+    "react-spinners": "^0.3.2",
+    "reactstrap": "^6.0.1",
+    "v3-yelp-api": "^1.0.2",
+    "yelp-fusion": "^2.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
