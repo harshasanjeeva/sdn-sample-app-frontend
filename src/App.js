@@ -164,12 +164,12 @@ render() {
     return (
       <div>
     <div style={{height:"400px",width:"1550px","backgroundSize": "cover",backgroundImage:"url(" +"https://s3-media1.fl.yelpcdn.com/assets/srv0/yelp_large_assets/dde93fe399aa/assets/img/home/hero_photos/Xs7es0q4jmFY5CV3uTeuPw.jpg"+")"}}>
-    <div >
+    <div>
 
     
     <div>
     <Navbar color="light" light expand="md">
-      <NavbarBrand href="/">Arec App</NavbarBrand>
+      <NavbarBrand href="/">Location App</NavbarBrand>
       <NavbarToggler onClick={this.toggle} />
       <Collapse isOpen={this.state.isOpen} navbar>
         <Nav className="ml-auto" navbar>
@@ -179,23 +179,7 @@ render() {
           <NavItem>
             <NavLink href="/">About Team</NavLink>
           </NavItem>
-          <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret>
-              Options
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem>
-                Option 1
-              </DropdownItem>
-              <DropdownItem>
-                Option 2
-              </DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>
-                Reset
-              </DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
+
         </Nav>
       </Collapse>
     </Navbar>
