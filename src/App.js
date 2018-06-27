@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import {Input,Label,Button,Row,Col} from 'reactstrap'
+import {Input,Label,Button,Row,Col,Pagination} from 'reactstrap';
 import axios from 'axios';
 import { RingLoader } from 'react-spinners';
 import yelp from 'yelp-fusion';
@@ -221,16 +221,18 @@ render() {
         key={number}
         id={number}
         onClick={this.handleClick}
+        style={{color:"teal",float:"left",marginLeft:"25px"}}
       >
-        {number}
+      {number}  
       </li>
+
     );
   });
  console.log("callCount",this.callCount)
     return (
       <div>
 
-    <div style={{height:"600px",width:"1550px","backgroundSize": "cover",backgroundImage:"url(" +"https://www.setaswall.com/wp-content/uploads/2017/06/Linkedin-Backgrounds-14-1400-x-350.png"+")"}}>
+    <div style={{height:"700px",width:"1550px","backgroundSize": "cover",backgroundImage:"url(" +"https://www.setaswall.com/wp-content/uploads/2017/06/Linkedin-Backgrounds-14-1400-x-350.png"+")"}}>
     <div>
 
     
@@ -256,7 +258,7 @@ render() {
       }}> Click here to load the Api</Button>
 <br />
 <br />
-  <Input type="search" name="search" id="exampleSearch" placeholder="search projects" style={{width:400}} onChange={(event) => {
+  <Input type="search" name="search" id="exampleSearch" placeholder="search quotes" style={{width:400}} onChange={(event) => {
           
     let newDisplay = this.state.currentlyDisplayed.filter(project=>project.includes(event.target.value));
 // console.log("filter=======>",this.props.projectList.filter(project=>project.skills.includes("Java")));
@@ -274,20 +276,21 @@ render() {
 
 
   <div>
+
   <ul>
     {renderTodos}
   </ul>
-  <a id="page-numbers">
-    {renderPageNumbers}
-  </a>
-</div>    
-          return (<div  >
-   
   
-            
-            </div>)
+   <a> {renderPageNumbers}</a>
+
+</div>    
+<div style={{marginTop:"20px",height:"200px",backgroundColor:"black"}}>
+   
+<p>.</p>
+          
+          </div>
         
-       }
+       
        </div>
     </div>
     </div>
